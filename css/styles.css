@@ -1,0 +1,353 @@
+/* Змінні */
+:root {
+  /* Font */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  /* Text  */
+  --white-txt-cl: #ffffff;
+  --primery-txt-cl: #4d5ae5;
+  --pressed-txt-cl: #404bbf;
+  --dark-txt-cl: #2e2f42;
+  --text: #434455;
+  --light-txt-cl: #f4f4fd;
+  --success: #31d0aa;
+  --success-75: rgba(47, 208, 170, 0.75);
+  --success-50: rgba(47, 208, 170, 0.5);
+  --success-10: rgba(47, 208, 170, 0.1);
+  --subtle-txt-cl: #8e8f99;
+  --accent-txt-cl: #e7e9fc;
+  /* Background */
+  --white-bg-cl: #ffffff;
+  --primery-bg-cl: #4d5ae5;
+  --pressed-bg-cl: #404bbf;
+  --dark-bg-cl: #2e2f42;
+  --dark-70: rgba(46, 47, 66, 0.7);
+  --dark-40: rgba(46, 47, 66, 0.4);
+  --text-bg-cl: #434455;
+  --light-bg-cl: #f4f4fd;
+  --subtle-bg-cl: #8e8f99;
+  --accent-bg-cl: #e7e9fc;
+}
+
+/* Base styles */
+.page {
+  background-color: var(--white-bg-cl);
+  color: var(--text);
+  font-family: var(--main-font);
+}
+
+.link {
+  text-decoration: none;
+  font-family: inherit;
+}
+.list {
+  list-style: none;
+}
+/* h3 */
+.title {
+  color: var(--dark-txt-cl);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/* h2 */
+.section-title {
+  color: var(--dark-txt-cl);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.button {
+  letter-spacing: 0.04;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+/**
+  |============================
+  | Header 
+  |============================
+*/
+.logo {
+  color: var(--dark-txt-cl);
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  font-weight: 800;
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--pressed-txt-cl);
+}
+
+.logo-web {
+  color: var(--primery-txt-cl);
+  text-transform: uppercase;
+}
+
+.logo-web:hover,
+.logo-web:focus {
+  color: var(--pressed-txt-cl);
+}
+/* Site-nav */
+.site-nav .link {
+  color: var(--dark-txt-cl);
+  font-weight: 500;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--pressed-txt-cl);
+}
+
+.site-nav .link.current {
+  color: var(--primery-txt-cl);
+}
+
+.auth-nav .link {
+  color: var(--text);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--pressed-txt-cl);
+}
+
+/**
+  |============================
+  | Footer
+  |============================
+*/
+
+.footer {
+  color: var(--accent-txt-cl);
+  background-color: var(--dark-bg-cl);
+}
+
+.logo-footer {
+  color: var(--light-txt-cl);
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  font-weight: 800;
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--pressed-txt-cl);
+}
+
+/**
+  |============================
+  | Розмітка головної сторінки index.html
+  |============================
+*/
+
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+
+.hero {
+  background-color: var(--dark-bg-cl);
+}
+
+.hero-title {
+  color: var(--white-txt-cl);
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* Button  */
+.button-hero {
+  color: var(--white-txt-cl);
+  background-color: var(--primery-bg-cl);
+  letter-spacing: 0.04em;
+}
+.button-hero:hover,
+.button-hero:focus {
+  color: var(--white-txt-cl);
+  background-color: var(--pressed-bg-cl);
+}
+
+/**
+  |============================
+  | Section 1 Features
+  |============================
+*/
+/**
+  |============================
+  |  Section 2 Item
+  |============================
+*/
+/**
+  |============================
+  | Section 3 Team list
+  |============================
+*/
+
+.team-list {
+  background: var(--light-bg-cl);
+}
+.person {
+  background-color: var(--white-bg-cl);
+  width: 264px;
+  height: 428px;
+}
+.team-title {
+  text-align: center;
+}
+
+.team-text {
+  text-align: center;
+}
+
+/**
+  |============================
+  | Розмітка сторінки ПОРТФОЛІО
+  |============================
+*/
+
+/* Button of filter */
+.button-filter {
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.button-filter-all {
+  color: var(--primery-txt-cl);
+  background-color: var(--light-bg-cl);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  height: 48px;
+  width: 69px;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+}
+.button-filter-all:hover,
+.button-filter-all:focus {
+  color: var(--white-txt-cl);
+  background-color: var(--pressed-bg-cl);
+}
+
+.button-filter-web {
+  color: var(--primery-txt-cl);
+  background-color: var(--light-bg-cl);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  height: 48px;
+  width: 116px;
+  left: 93px;
+  top: 0px;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+}
+.button-filter-web:hover,
+.button-filter-web:focus {
+  color: var(--white-txt-cl);
+  background-color: var(--pressed-bg-cl);
+}
+
+.button-filter-app {
+  color: var(--primery-txt-cl);
+  background-color: var(--light-bg-cl);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  height: 48px;
+  width: 78px;
+  left: 93px;
+  top: 0px;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+}
+.button-filter-app:hover,
+.button-filter-app:focus {
+  color: var(--white-txt-cl);
+  background-color: var(--pressed-bg-cl);
+}
+
+.button-filter-design {
+  color: var(--primery-txt-cl);
+  background-color: var(--light-bg-cl);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  height: 48px;
+  width: 101px;
+  left: 93px;
+  top: 0px;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+}
+.button-filter-design:hover,
+.button-filter-design:focus {
+  color: var(--white-txt-cl);
+  background-color: var(--pressed-bg-cl);
+}
+.button-filter-marketing {
+  color: var(--primery-txt-cl);
+  background-color: var(--light-bg-cl);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  height: 48px;
+  width: 126px;
+  left: 93px;
+  top: 0px;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+}
+.button-filter-marketing:hover,
+.button-filter-marketing:focus {
+  color: var(--white-txt-cl);
+  background-color: var(--pressed-bg-cl);
+}
+
+/**
+  |============================
+  | Examples of works
+  |============================
+*/
+.example-link {
+  color: currentColor;
+}
+
+.example-link:hover,
+.example-link:focus {
+  color: var(--pressed-bg-cl);
+}
+
+.example-txt {
+  font-size: 16px;
+  line-height: 1.2;
+}
