@@ -51,7 +51,13 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 
+  letter-spacing: 0.02em;
+}
 /* h2 */
 .section-title {
   color: var(--dark-txt-cl);
@@ -62,15 +68,25 @@
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .button {
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
 }
 /**
   |============================
@@ -87,9 +103,9 @@
   font-weight: 800;
 }
 
-.logo:hover,
-.logo:focus {
+.logo:hover {
   color: var(--pressed-txt-cl);
+  cursor: default;
 }
 
 .logo-web {
@@ -97,14 +113,16 @@
   text-transform: uppercase;
 }
 
-.logo-web:hover,
-.logo-web:focus {
+.logo-web:hover {
   color: var(--pressed-txt-cl);
 }
 /* Site-nav */
 .site-nav .link {
   color: var(--dark-txt-cl);
   font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -169,7 +187,6 @@
 
 .hero-title {
   color: var(--white-txt-cl);
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -240,10 +257,7 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  height: 48px;
-  width: 69px;
-  left: 0px;
-  top: 0px;
+
   cursor: pointer;
   font-family: inherit;
   letter-spacing: 0.04em;
@@ -253,7 +267,7 @@
   color: var(--white-txt-cl);
   background-color: var(--pressed-bg-cl);
 }
-
+/* 
 .button-filter-web {
   color: var(--primery-txt-cl);
   background-color: var(--light-bg-cl);
@@ -331,7 +345,7 @@
 .button-filter-marketing:focus {
   color: var(--white-txt-cl);
   background-color: var(--pressed-bg-cl);
-}
+} */
 
 /**
   |============================
@@ -350,4 +364,8 @@
 .example-txt {
   font-size: 16px;
   line-height: 1.2;
+}
+
+.team-section {
+  background-color: #f4f4fd;
 }
