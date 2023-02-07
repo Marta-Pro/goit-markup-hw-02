@@ -39,6 +39,9 @@
 .link {
   text-decoration: none;
   font-family: inherit;
+  line-height: 24px;
+
+  letter-spacing: 0.02em;
 }
 .list {
   list-style: none;
@@ -51,7 +54,7 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-p {
+.features-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -162,11 +165,8 @@ p {
   line-height: 1.33;
   letter-spacing: 0.03em;
   font-weight: 800;
-}
-
-.logo-footer:hover,
-.logo-footer:focus {
-  color: var(--pressed-txt-cl);
+  text-decoration: none;
+  cursor: default;
 }
 
 /**
@@ -198,7 +198,6 @@ p {
 .button-hero {
   color: var(--white-txt-cl);
   background-color: var(--primery-bg-cl);
-  letter-spacing: 0.04em;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -221,14 +220,15 @@ p {
   | Section 3 Team list
   |============================
 */
+.team-section {
+  background-color: #f4f4fd;
+}
 
 .team-list {
   background: var(--light-bg-cl);
 }
 .person {
   background-color: var(--white-bg-cl);
-  width: 264px;
-  height: 428px;
 }
 .team-title {
   text-align: center;
@@ -257,7 +257,6 @@ p {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-
   cursor: pointer;
   font-family: inherit;
   letter-spacing: 0.04em;
@@ -267,85 +266,6 @@ p {
   color: var(--white-txt-cl);
   background-color: var(--pressed-bg-cl);
 }
-/* 
-.button-filter-web {
-  color: var(--primery-txt-cl);
-  background-color: var(--light-bg-cl);
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  height: 48px;
-  width: 116px;
-  left: 93px;
-  top: 0px;
-  cursor: pointer;
-  font-family: inherit;
-  letter-spacing: 0.04em;
-}
-.button-filter-web:hover,
-.button-filter-web:focus {
-  color: var(--white-txt-cl);
-  background-color: var(--pressed-bg-cl);
-}
-
-.button-filter-app {
-  color: var(--primery-txt-cl);
-  background-color: var(--light-bg-cl);
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  height: 48px;
-  width: 78px;
-  left: 93px;
-  top: 0px;
-  cursor: pointer;
-  font-family: inherit;
-  letter-spacing: 0.04em;
-}
-.button-filter-app:hover,
-.button-filter-app:focus {
-  color: var(--white-txt-cl);
-  background-color: var(--pressed-bg-cl);
-}
-
-.button-filter-design {
-  color: var(--primery-txt-cl);
-  background-color: var(--light-bg-cl);
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  height: 48px;
-  width: 101px;
-  left: 93px;
-  top: 0px;
-  cursor: pointer;
-  font-family: inherit;
-  letter-spacing: 0.04em;
-}
-.button-filter-design:hover,
-.button-filter-design:focus {
-  color: var(--white-txt-cl);
-  background-color: var(--pressed-bg-cl);
-}
-.button-filter-marketing {
-  color: var(--primery-txt-cl);
-  background-color: var(--light-bg-cl);
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  height: 48px;
-  width: 126px;
-  left: 93px;
-  top: 0px;
-  cursor: pointer;
-  font-family: inherit;
-  letter-spacing: 0.04em;
-}
-.button-filter-marketing:hover,
-.button-filter-marketing:focus {
-  color: var(--white-txt-cl);
-  background-color: var(--pressed-bg-cl);
-} */
 
 /**
   |============================
@@ -356,16 +276,7 @@ p {
   color: currentColor;
 }
 
-.example-link:hover,
-.example-link:focus {
-  color: var(--pressed-bg-cl);
-}
-
 .example-txt {
   font-size: 16px;
   line-height: 1.2;
-}
-
-.team-section {
-  background-color: #f4f4fd;
 }
